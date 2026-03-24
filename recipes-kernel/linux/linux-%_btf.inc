@@ -1,6 +1,6 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-SRC_URI += "${@bb.utils.contains('DISTRO_FEATURES', 'btf', 'file://btf.scc', '', d)}"
+SRC_URI += "file://btf.scc"
 
 DEPENDS += "pahole-native"
 
